@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.warp{
+  width: 1200px;
+  height: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header{
+  height: 500px;
+  background: url(../images/page-1.png);
+  background-size: cover;
+}
+.header h1{
+  text-align: center;
+  padding-top: 150px;
+  font-size: 40px;
+  color: white;
+  letter-spacing: 5px;
+  
+}
+.header select{
+  position: absolute;
+    top: 18%;
+    left: 30%;
+    padding: 10px 300px 10px 0px;
+  font-size: 20px;
+  background: #E0FFFF;
+  border-radius: 5px;
+}
+.popular-destination{
+  position: absolute;
+  top: 39%;
+    left: 24%;
+    width: 600px;
+    height: 100px;
+  background: #DEDEDE;
+  box-shadow: 0px 0px 20px gray ;
+  border-radius: 5px;
+}
+
+.popular-destination p{
+  padding: 15px 50px 0px 20px;
+}
+.btn input{
+  margin-top: 15px;
+  margin-left: 25px;
+  font-size: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 5px 20px 5px 20px;
+}
+.l-button{
+  background:  purple;
+}
+
+.t-button{
+  background: red;
+}
+
+.n-button{
+  background: #1E90FF;
+}
+
+.s-button{
+  background:pink;
+}
+.divide{
+  width: 100%;
+  border-top: 2px dashed #559AC8;
+  margin-top: 133px;
+ 
+  position: relative; 
+}
+.divide:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  border: 2px solid #559AC8;
+  border-radius: 50px;
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  background-color: #FFFFFF; }
+
+  .divide:after {
+    content: '';
+    border-style: solid;
+    border-width: 10px 7px 0 7px;
+    border-color: #559AC8 transparent transparent transparent;
+    position: absolute;
+    top: -4px;
+    left: 50.7%; 
+  }
+
+ .title{
+  text-align: center;
+  margin: 40px 0 50px 0;
+  font-size: 40px;
+  color: #8a82cc;
+}
+.content {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  
+}
+.listBox{
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(245, 227, 227);
+}
+.card{
+  width: 48%;
+  height: 300px;
+  margin: 0 10px 0px 13px;
+  margin-bottom: 30px;
+  float: left;
+  background-color: white;
+}
+.cardtop{
+ height: 200px;
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ align-items: flex-end;
+ background-size: cover;
+ background-repeat: no-repeat;
+ position: relative;
+}
+.Attractions{
+  padding: 0 0 5px 10px;
+  color: aliceblue;
+  font-size: 22px;
+  margin-right: auto !important;
+}
+.zoonName{
+  padding: 5px;
+  color:aliceblue;
+  font-size: 22px;
+}
+
+.cardContent {
+  padding: 15px;
+}
+
+.cardContent li{
+   margin-bottom: 10px;
+}
+
+.info {
+  float: right;
+  width: 100px;
+  padding: 3px;
+}
+
+
+
+.footer{
+  height: 80px;
+  background: skyblue;
+
+}
+
+.footer a{
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+  color: #f7f7f7;
+  text-decoration: none;
+}
+.footer span{
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.top{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
