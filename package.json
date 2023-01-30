@@ -1,6 +1,6 @@
 {
   "dependencies": {
     "bootstrap": "^5.0.0-beta2",
-    "firebase-admin": "^9.5.0"
+    "firebase-admin": "^11.5.0"
   }
 }
