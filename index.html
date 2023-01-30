@@ -1,39 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+	<head>
+		<meta charset="UTF-8">
+		<title>國瑞美學牙醫診所</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/allBMI.css">
-</head>
+    <link rel="shortcut icon" href="./images/icon.png">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
+    <link rel="stylesheet" href="./stylesheets/all.css">
+	</head>
+
 <body>
-      <div class="warp">
-          <div class="banner">
-              <img src="images/BMICLogo.png" alt="">
-              <div class="inputArea">
-                  <label for="tall">身高 cm</label>
-                  <br>
-                  <input type="text" name="varTall" id="tall" placeholder="請輸入身高">
-                  <br>
-                  <label for="weight">體重 kg</label>
-                  <br>
-                  <input type="text" name="varweight" id="weight" placeholder="請輸入體重">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light site-header">
+        <div class="container-fluid">
+            <a class="navbar-brand ml-2" href="./index.html">
+              <img src="./images/a01.png" width="200px" alt="">
+            </a>
+        <button class="navbar-toggler mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">首頁</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="./Team.html"><i class="far fa-address-book"></i>醫療團隊</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Item.html"><i class="far fa-clone"></i>醫療項目</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Reservation.html"><i class="far fa-calendar-alt"></i>門診時間</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Device.html"><i class="fas fa-laptop-medical"></i>環境設備</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./About.html"><i class="fas fa-file-signature"></i>關於我們</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+      </nav>
+    </header>
+    <header class=" sticky-top">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light site-header2">
+                <div class="container-fluid">
+                    <a class="navbar-brand ml-2" href="./index.html">
+                      <span style="font-family: Brush Script MT, Brush Script Std, cursive; font-size: 1.35rem;"><img src="./images/a01.png" width="200" alt="" class="img-logo"></span>
+                    </a>
+                <button class="navbar-toggler mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">首頁</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Team.html"><i class="far fa-address-book"></i>醫療團隊</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Item.html"><i class="far fa-clone"></i>醫療項目</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Reservation.html"><i class="far fa-calendar-alt"></i>門診時間</a>
+                        </li>
+						            <li class="nav-item">
+                            <a class="nav-link" href="./Device.html"><i class="fas fa-laptop-medical"></i>環境設備</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./About.html"><i class="fas fa-file-signature"></i>關於我們</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+      </nav>
+		</header>
+    <main>
+      <section>
+        <div class="IndexHero">
+          <div class="Hero_mainHead">
+            <h1 class="Hero_Logo">
+              Guorui  
+            </h1>
+            <div class="Hero_Visual">
+              <div class="Hero_VisualImage banner" id="banner">
+                <div class="Hero_VisualItem banner-slide slide1 slide-active">
+                </div>
+                <div class="Hero_VisualItem banner-slide slide2">
+                </div>
+                <div class="Hero_VisualItem banner-slide slide3">
+                </div>
               </div>
-              <div class="btn">
-                  <input class="resultBtn" type="button" value="試算">
+            </div>
+          </div>
+          <div class="Hero_mainFoot">
+            <div class="phoneTittle">
+              <div class="phone">
+                <a href="tel:0222345678">0222345678</a>
               </div>
-              <div class="clearfix"></div>
+              <div class="Line">
+                <a href="#" target="_blank" class="btn text-white">LINE</a>
+              </div>
+              <div class="Facebook">
+                <a href="#" target="_blank" class="btn text-white">Facebook</a>
+              </div>
+            </div>
+            <div class="Information">
+              <div class="news">
+                <a href="./News.html" class="InformationContainer" target="_blank">
+                  <div class="InformationAll">
+                    <div class="Information_head">
+                      <div class="lable mr-3">
+                        New
+                      </div>
+                      <p class="Information__date" style="margin-bottom: 0px;">
+                        2021.05.21
+                      </p>
+                    </div>
+                    <div class="Information_foot">
+                      <p class="ellipsis">國瑞美學牙醫診所官方網頁</p> 
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="dots" id="dots">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-          <div class="history">
-              <h2>BMI紀錄</h2>
-              <ul class="list"></ul>
-              <div class="clearfix"></div>
-              <a class="clear" href="#">清除歷史資料</a>
+        </div>
+      </section>
+      <section class="info py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.2623702963774!2d121.45487431561476!3d25.059094983960517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a88f7d861de9%3A0x963340215a64bca8!2zMjQy5paw5YyX5biC5paw6I6K5Y2A5Lit5aSu6LevMTAw6Jmf!5e0!3m2!1szh-TW!2stw!4v1621820271081!5m2!1szh-TW!2stw" width="100%" height="440" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="right">
+                <div class="image"></div>
+                <table class="hour table-box">
+                  <tbody>
+                    <tr>
+                      <th>診療時間</th>
+                      <td>週一</td>
+                      <td>週二</td>
+                      <td>週三</td>
+                      <td>週四</td>
+                      <td>週五</td>
+                    </tr>
+                    <tr>
+                      <th>11:00am<br class="sp">~21:00pm</th>
+                      <td>●</td>
+                      <td>●</td>
+                      <td>●</td>
+                      <td>●</td>
+                      <td>●</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>休息日：週六，週日</p>
+              </div>
           </div>
-          <div class="footer">
-              <img src="images/BMICLogo.png" alt="">
           </div>
+        </div>
+      </section>
+      <section class="about_us py-5 mb-2">
+        <div class="container-fluid about_img">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="company"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="left">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <h2 class="title">關於我們<span>ABOUT US</span></h2>
+              <h3>「全球化」 、 「數位化」 、 「永續化」</h3>
+              <p>近年來全世界經濟詭譎多變加上新冠
+                肺炎病毒在全球肆虐，幾乎對所有國家都
+                造成巨大的影響，所有國家對高科技的醫
+                療儀器設備產品需求愈來愈大，台灣牙醫
+                市場更是比其他國家更競爭，如何面對
+                「全球化」 、 「數位化」 、 「永續化」
+                的競爭環境、牙醫的專業科目愈分愈細，
+                數位整合醫療設備、材料、軟體、專科
+                醫師成立菁英醫療團隊共同設立大型牙醫
+                診所以經成為主流趨勢，隨著診所大型化
+                的趨勢，行銷、管理、訓練將成為診所持續
+                且必要的功課，而此活動的優劣將必為診所經營成敗的主要關鍵，讓我們專業的經營團隊隨時支援我們的連鎖診所，以全方位e化的整合讓診所達到開源節流及服務品質的一致性。
+              </p>
+              <p>根據衛生福利部中央健康保險屬2017年2月份統計，台灣目前約有6550家牙醫診所及13950位牙師，牙醫診所隨處可見，就如便利超商滿街都是，每年大約還有 320名牙醫學系的學生畢業，台灣的人口總數也才2300萬人，為什麼還有這麼多人選擇當牙醫師，在實施全民健康保險來，不但方便了民眾看牙的需求，也提升了國民口腔健康與衛生習慣的改善，在這美麗的光環之下，每年有 320億的牙科健保總額預算，加上自費項目琳琅滿目，如人工植牙、齒顎矯正、雷射容、假牙……等等，也讓牙醫師的收入高於其他醫學系的醫師。
+              </p>
+              <a href="./About.html" class="btn btn-outline-info float-right">進一步了解&ensp;&ensp;<i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="treatment py-3">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+              <h2 class="title">醫療項目<span>TREATMENT</span></h2>
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm4">
+                  <div class="treatment-item">
+                    <a href="./Sever1.html">
+                      <span class="item-img1 mb-2"></span>
+                      家庭牙科
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm4">
+                  <div class="treatment-item">
+                    <a href="./Sever2.html">
+                      <span class="item-img2 mb-2"></span>
+                      植牙專科
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm4">
+                  <div class="treatment-item">
+                    <a href="./Sever3.html">
+                      <span class="item-img3 mb-2"></span>
+                      矯正專科
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm4">
+                  <div class="treatment-item">
+                    <a href="./Sever4.html">
+                      <span class="item-img4 mb-2"></span>
+                      兒童專科
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm4">
+                  <div class="treatment-item">
+                    <a href="./Sever5.html">
+                      <span class="item-img5 mb-2"></span>
+                      牙齒美白
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm4">
+                  <div class="treatment-item">
+                    <a href="./Sever6.html">
+                      <span class="item-img6 mb-2"></span>
+                      牙周治療
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="doctor py-5 mb-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="inner">
+                    <div class="inner-content">
+                      <h2 class="title">院長的問候<span>DOCTOR</span></h2>
+                      <p class="Dean">
+                        <span>國瑞美學牙醫整所 院長</span>
+                        林佐文
+                      </p>
+                      <p>隨著診所大型化 的趨勢，行銷、管理、訓練將成為診所持續 且必要的功課，而此活動的優劣將必為診所經營成敗的主要關鍵，讓我們專業的經營團隊隨時支援我們的連鎖診所，以全方位e化的整合讓診所達到開源節流及服務品質的一致性。</p>
+                      <a href="./Team.html" class="btn btn-outline-info doctor-btn">醫療團隊&ensp;&ensp;<i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="doctor-img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="equipment py-4">
+        <div class="container">
+          <div class="row">
+            <h2 class="title">環境設備<span>EQUIPMENT</span></h2>
+            <div class="col-lg-6 col-md-6 col-sm-12" style="z-index: 50;">
+              <div class="equipment1"></div>
+              <div class="equipment3"></div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12" style="z-index: 50;">
+              <div class="equipment2"></div>
+              <div class="equipment4"></div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+              <a href="./Device.html" class="btn btn-outline-info">進一步了解&ensp;&ensp;<i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact_us">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+              <h2 class="title">關於我們<span>CONTACT US</span></h2>
+              <p class="text-center">我們通過LINE接受諮詢，
+                只要將我們加為朋友，您就可以問我們任何問題。</p>
+              <a href="" class="Line-btn">
+                <img src="./images/Line.png" class="img-fluid" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer style="background: linear-gradient(325deg, rgba(134, 205, 249, 1) 0%, rgba(87, 139, 213, 1) 100%);">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h4 class="text-white">國瑞美學牙醫診所</h4>
+            <p class="text-white">門診時間：週一～週五 11:00~21:00（下午5:00 - 6:00 休診）
+              <br>
+              &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;週六與週日 休診
+            </p>
+            <p class="text-white">診所地址：新北市新莊區中央路100號</p>
+            <p class="text-white">國瑞諮詢專線：<a href="tel:0222345678" class="tel">02-22345678</a></p>
+            <p class="text-white">電子郵件：<a href="mailto://Guorui.Aesthetic@gmail.com" class="mail">Guorui.Aesthetic@gmail.com</a></p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h4 class="text-white">院所位置</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.2623702963774!2d121.45487431561476!3d25.059094983960517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a88f7d861de9%3A0x963340215a64bca8!2zMjQy5paw5YyX5biC5paw6I6K5Y2A5Lit5aSu6LevMTAw6Jmf!5e0!3m2!1szh-TW!2stw!4v1621820271081!5m2!1szh-TW!2stw" width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="js-back-to-top top" title="回到頭部"><i class="far fa-caret-square-up" style="font-size: 60px;"></i></div>
       </div>
-      <script src="js/allBMI.js"></script>
+    </footer>
+
+
+
+      
+<script src="./stylesheets/Js/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src="./stylesheets/Js/all.js"></script>
+<script>
+  var timer = null,
+    index = 0,
+    pics = byId("banner").getElementsByTagName("div"),
+    dots = byId("dots").getElementsByTagName("span"),
+    size = pics.length
+function byId(id){
+  return typeof(id)==="string"?document.getElementById(id):id;
+}
+function stopAutoPlay(){
+	if(timer){
+       clearInterval(timer);
+	}
+}
+function startAutoPlay(){
+  timer = setInterval(function(){
+      index++;
+      if(index >= size){
+         index = 0;
+      }
+      changeImg();
+  },3200)
+}
+function changeImg(){
+  for(var i=0,len=dots.length;i<len;i++){
+      dots[i].className = "";
+      pics[i].style.display = "none";//遍歷所有的pics隱藏
+  }
+  dots[index].className = "active";
+  pics[index].style.display = "block";
+}
+function slideImg(){
+  for(var i=0,len=dots.length;i<len;i++){
+     dots[i].id = i;
+     dots[i].onclick = function(){
+         index = this.id;
+         changeImg();//點選則呼叫切換圖片
+     }
+  }
+}
+startAutoPlay();
+slideImg();
+</script>
 </body>
 </html>
